@@ -1,5 +1,5 @@
 rm ../sign/verification.png
-rm ../sign/verification.png.gpg
+rm ../sign/verification.png.asc
 
 # decrypt and compile the generate program
 cd ../generate
