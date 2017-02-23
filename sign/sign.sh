@@ -1,3 +1,6 @@
+rm ../sign/verification.png
+rm ../sign/verification.png.gpg
+
 # compile the 
 cd ../generate
 cmake .
