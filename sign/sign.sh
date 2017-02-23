@@ -1,19 +1,27 @@
+# remove old files
 rm ../sign/verification.png
 rm ../sign/verification.png.gpg
 
-# compile the 
+# compile the generate bot
 cd ../generate
 cmake .
 make
 ./verifybot
 
+# move the verification image to the sign folder
 mv frame.png ../sign/verification.png
 
+# change into sign
 cd ../sign
+
+# sign the image
 gpg --sign verification.png
 
+# commit to github
 git commit -S -am "Signed."
 git push
+
+
 
 exit 1;
 
