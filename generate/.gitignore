@@ -1,5 +1,8 @@
 .DS_Store
+<<<<<<< HEAD
 main.cpp
+=======
+>>>>>>> c431175633a7cb74658713360babfcf2ca345b08
 CMakeCache.txt
 cmake_install.cmake
 CMakeFiles/*
