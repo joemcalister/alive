@@ -21,7 +21,7 @@ rm main.cpp
 cd ../sign
 
 # sign the image
-gpg --sign verification.png
+gpg --armor --detach-sig verification.png
 
 # commit to github
 git commit -S -am "Signed."
