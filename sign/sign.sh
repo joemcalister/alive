@@ -2,8 +2,9 @@
 rm ../sign/verification.png
 rm ../sign/verification.png.gpg
 
-# compile the generate bot
+# decrypt and compile the generate program
 cd ../generate
+gpg --output main.cpp --decrypt main.gpg
 cmake .
 make
 ./verifybot
@@ -16,6 +17,12 @@ cd ../sign
 
 # sign the image
 gpg --sign verification.png
+
+# re-sign the main cpp
+gpg --output main.gpg --encrypt --recipient joe@lonestorm.com main.cpp
+
+# remove the plaintext
+rm main.cpp
 
 # commit to github
 git commit -S -am "Signed."
