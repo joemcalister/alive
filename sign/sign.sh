@@ -1,4 +1,4 @@
-# remove old files
+#remove old files
 rm ../sign/verification.png
 rm ../sign/verification.png.gpg
 
