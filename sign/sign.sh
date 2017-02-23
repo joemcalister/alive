@@ -15,14 +15,14 @@ mv frame.png ../sign/verification.png
 # re-sign the main cpp
 gpg --output main.gpg --encrypt --recipient joe@lonestorm.com main.cpp
 
+# remove the plaintext
+rm main.cpp
+
 # change into sign
 cd ../sign
 
 # sign the image
 gpg --sign verification.png
-
-# remove the plaintext
-rm main.cpp
 
 # commit to github
 git commit -S -am "Signed."
