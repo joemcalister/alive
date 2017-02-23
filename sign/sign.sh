@@ -9,8 +9,17 @@ mv frame.png ../sign/verification.png
 cd ../sign
 gpg --sign verification.png
 
+git commit -S -am "Signed."
+git push
 
 exit 1;
+
+
+
+
+
+
+
 
 mkdir signing
 cd signing
