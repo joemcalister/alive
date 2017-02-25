@@ -13,3 +13,6 @@ This should result in something similar to 'Good signature from "Joe McAlister <
 
 ### Latest verify image
 ![Verify Image](/sign/verification.png?raw=true?random=6463722 "Verification Image")
+
+### Update - 25th February 2017
+I had to make a change to the file structure in the past commits, this caused many commits to become unsigned. I will sign the latest commit to authenticate these changes.
