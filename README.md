@@ -9,7 +9,7 @@ git clone https://github.com/joemcalister/alive.git
 cd alive/sign
 gpg --verify verification.png.asc verification.png
 ```
-This should result in something simmilar to 'Good signature from "Joe McAlister <joe.mcalister@lonestorm.com>"'
+This should result in something similar to 'Good signature from "Joe McAlister <joe.mcalister@lonestorm.com>"'
 
 ### Latest verify image
-![Verify Image](/sign/verification.png?raw=true "Verification Image")
+![Verify Image](/sign/verification.png?raw=true?random=6463722 "Verification Image")
