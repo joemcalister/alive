@@ -11,9 +11,6 @@ make
 # move the verification image to the sign folder
 mv frame.png ../sign/verification.png
 
-# re-sign the main cpp
-gpg --output main.gpg --encrypt --recipient joe@lonestorm.com main.cpp
-
 # remove the plaintext
 rm main.cpp
 
